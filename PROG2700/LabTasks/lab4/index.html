@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Space Cookie Clicker</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Space Cookie Clicker</h1>
+        <div id="cookie" onclick="animateCookie(); clickCookie();"></div>
+        <div id="score">Score: <span id="scoreValue">0</span></div>
+        <div id="spaceObjects">
+            <div class="space-object" id="planet" onclick="unlockObject('planet')">🪐</div>
+            <div class="space-object" id="rocket" onclick="unlockObject('rocket')">🚀</div>
+            <div class="space-object" id="alien" onclick="unlockObject('alien')">👾</div>
+            <div class="space-object" id="fourthObject" onclick="animateObject(this); checkFourthObject();">⭐</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
